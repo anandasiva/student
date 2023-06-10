@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "ANAND",
+      "email": "anand@gmail.com",
+      "mobile": 8969696907,
+      "city": "Surandai"
+    },
+    {
+      "name": "SIVA",
+      "email": "siva@gmail.com",
+      "mobile": 9869896765,
+      "city": "TIRUNELVELI",
+      "id": 2
+    }
+  ],
+  "signup": [
+    {
+      "name": "ANAND",
+      "email": "anandasiva284@gmail.com",
+      "mobile": 9789686988,
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "SIVA",
+      "email": "siva@gmail.com",
+      "mobile": 9079086078,
+      "password": "5678",
+      "id": 2
+    },
+    {
+      "name": "Riyaz",
+      "email": "riyaz@gmail.com",
+      "mobile": 9869609699,
+      "password": "9876",
+      "id": 3
+    }
+  ]
+}

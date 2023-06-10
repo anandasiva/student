@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+     <div class="col-md-6">
+     <div class="card"> 
+    <div class="text-center">
+        <h1>Student Signup</h1>
+        <strong>Signup Anytime!</strong><hr>
+        </div>
+        <form [formGroup]="signupform"(ngSubmit)="signup()" novalidate>
+            <div class="mb-3">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="name" formControlName="name"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter the name">
+                <small *ngIf="signupform.get('name')?.invalid && signupform.get('name')?.touched"class="text-danger">Name is Required</small>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" formControlName="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter the email">
+              <small *ngIf="signupform.get('email')?.invalid && signupform.get('email')?.touched"class="text-danger">Email is Required</small>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1">Mobile Number</label>
+              <input type="number" formControlName="mobile" class="form-control" id="exampleInputPassword1" placeholder="Enter the Mobile Number">
+              <small *ngIf="signupform.get('mobile')?.invalid && signupform.get('mobile')?.touched"class="text-danger">Mobile Number is Required</small>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1">Password</label>
+                <input type="password" formControlName="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter the password">
+                <small *ngIf="signupform.get('password')?.invalid && signupform.get('password')?.touched"class="text-danger">Password is Required</small>
+              </div><br>
+     
+            <button type="submit" class="btn btn-primary" [disabled]="signupform.invalid">Signup</button>
+          </form>
+    <a style="color:blue;margin-top: 10px;"routerLink="/login">Already Registered? Click here to Login</a>
+    
+    
+    </div>
+     </div>   
+    </div>
+    </div>
+    
